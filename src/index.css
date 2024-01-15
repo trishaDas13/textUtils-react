@@ -8,7 +8,7 @@
 }
 .light{
   overflow: hidden;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(90deg, hsla(4, 48%, 94%, 1) 0%, hsla(66, 70%, 80%, 1) 50%, hsla(226, 67%, 76%, 1) 100%);
 }
 .dark{
   background-color: #2b2d2e;

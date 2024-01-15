@@ -1,0 +1,15 @@
+.heading{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.sector{
+    height: 30px;
+    width: 350px;
+    border: 2px solid;
+    overflow: hidden;
+}
+.about button{
+    padding: 0;
+    border: none;
+}
