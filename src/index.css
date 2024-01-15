@@ -6,7 +6,11 @@
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
-body{
+.light{
   overflow: hidden;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.dark{
+  background-color: #2b2d2e;
+  overflow: hidden;
 }

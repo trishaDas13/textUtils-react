@@ -97,3 +97,9 @@ header ul li a{
     align-items: center;
     gap: 50px;
 }
+.dark header{
+  background-color: #070707;
+}
+.dark header li a{
+  color: white;
+}

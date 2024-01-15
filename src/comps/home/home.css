@@ -24,6 +24,9 @@ textarea{
     resize: none;
     border: 1px dashed black;
     border-radius: 10px;
+    cursor: default;
+    font-weight: 600;
+    font-size: 16px;
 }
 .preview{
     padding: 0.7rem;
@@ -96,4 +99,24 @@ button:nth-child(5):hover{
 .summary h3{
     color:rgba(85, 82, 82, 0.699);
     text-decoration: underline;
+}
+.dark h2{
+    color: white;
+}
+.dark button{
+    color: white;
+}
+.dark textarea{
+    background-color: rgba(128, 128, 128, 0.705);
+
+}
+.dark textarea::placeholder{
+    color: white;
+}
+.dark .summary{
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+.dark .summary h3{
+    color: white;
 }
