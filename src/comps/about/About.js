@@ -1,26 +1,39 @@
-import React from 'react';
-import './about.css';
-import  Data  from './Data';
+import React, { useState } from "react";
+import "./about.css";
+import Data from "./Data";
 
-function About() {
+function AboutUs() {
+  const [currentData, setCurrentData] = useState(Data);
+
+  const expandArea = (idx) => {
+    setCurrentData((prevData) => {
+      return prevData.map((item, i) => {
+        if (i === idx) {
+          return { ...item, expanded: !item.expanded };
+        }
+        return { ...item, expanded: false };
+      });
+    });
+  };
+
   return (
-    <section className="about">
-      {
-        Data.map((item, idx) => {
-          return (
-            <div className="sector" key={idx}>
-              <div className="heading">
-                <h3>{item.heading}</h3>
-                <button>+</button>
-              </div>
-              <p>{item.content}</p>
+    <main>
+      <section className="about">
+        {currentData.map((item, idx) => (
+          <div
+            key={idx}
+            className={`sector ${item.expanded ? "expanded" : ""}`}
+          >
+            <div className="heading" onClick={() => expandArea(idx)}>
+              <h3>{item.heading}</h3>
+              <button>+</button>
             </div>
-          );
-        })
-        
-      }
-    </section>
-  )
+            <p>{item.content}</p>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
 }
 
-export default About;
+export default AboutUs;

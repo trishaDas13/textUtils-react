@@ -1,15 +1,52 @@
 .heading{
     display: flex;
-    width: 300px;
+    width: 100%;
     justify-content: space-between;
 }
 .sector{
-    height: 30px;
-    width: 350px;
-    border: 2px solid;
+    background-color: white;
+    width: 100%;
+    max-width: 800px;
     overflow: hidden;
-}
+    transition: opacity 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    box-shadow: 3px 3px 10px rgb(49, 49, 49);
+    border-radius: 5px;
+    padding: 0.7rem 2rem;
+    gap: 15px;
+    overflow: hidden;
+    max-height: 50px;
+    transition: max-height 0.8s ease; /* Smooth transition effect */
+  }
+  
+  .sector.expanded {
+    max-height: 200px; /* Set maximum height as per your requirement */
+  }
+
 .about button{
     padding: 0;
     border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    gap: 15px;
+}
+.about button:hover{
+    background: transparent;
+    color: blue;
+    text-shadow: 0 0 2px;
+}
+.dark .about{
+    color: white;
+}
+.dark .about .sector{
+    background-color: #7c7c7c;
 }
