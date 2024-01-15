@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import './header.css'
 
 function Header() {
+
+    
+
+
   return (
     <header>
         <nav className="nav_left">
@@ -17,7 +21,7 @@ function Header() {
             <div className="checkbox-wrapper-54">
                 <label className="switch">
                     <input type="checkbox"/>
-                    <span className="slider"></span>
+                    <span className="slider" style={{border: '1px dashed'}}></span>
                 </label>
             </div>
         </nav>
